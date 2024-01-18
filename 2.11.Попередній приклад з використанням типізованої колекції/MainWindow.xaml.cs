@@ -23,6 +23,6 @@ namespace _2._11.Попередній_приклад_з_використання
         public MainWindow()
         {
             InitializeComponent();
-        }
+        }  
     }
 }
