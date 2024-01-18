@@ -1,0 +1,17 @@
+﻿<Window x:Class="_2._5.Використання_розширення_розмітки.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2._5.Використання_розширення_розмітки"
+        mc:Ignorable="d"
+        Title="Lection #2" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!--Використання розширення розмітки для посилання на статичні властивості-->
+            <TextBox x:Name="txtWidth" Text="600" Grid.Row="1" FontWeight="{x:Static SystemFonts.CaptionFontWeight}"/>
+            <Button x:Name="btnOk" Content="Ok" Grid.Row="2" Click="btnOk_Click" Foreground="{x:Static SystemColors.ActiveCaptionBrush}"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

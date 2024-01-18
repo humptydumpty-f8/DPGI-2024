@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2.Форма з кнопкою і обробником події кліку", "DPGI-2024\2.2.Форма з кнопкою і обробником події кліку.csproj", "{3529465A-AA89-40D8-8D8B-686FEFA1E799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1. Проста форма з обробником події", "2.1. Проста форма з обробником події\2.1. Проста форма з обробником події.csproj", "{5FDA8978-583A-403B-9A74-F31BA7B12D29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3.Форма з кнопкою без XAML", "2.3.Форма з кнопкою без XAML\2.3.Форма з кнопкою без XAML.csproj", "{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.Використання складних властивостей на прикладі заливки елементів", "2.4.Використання складних властивостей на прикладі заливки елементів\2.4.Використання складних властивостей на прикладі заливки елементів.csproj", "{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5.Використання прикріплених властивостей при розташуванні елементів в сітці", "2.5.Використання прикріплених властивостей при розташуванні елементів в сітці\2.5.Використання прикріплених властивостей при розташуванні елементів в сітці.csproj", "{3DB1DDB8-4067-4E5B-88F7-20417BA57200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.6.Використання розширення розмітки", "2.5.Використання розширення розмітки\2.6.Використання розширення розмітки.csproj", "{13092D21-6745-4169-B70C-8EE2CECE1D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.7.Використання спеціальних символів XAML", "2.7.Використання спеціальних символів XAML\2.7.Використання спеціальних символів XAML.csproj", "{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.8.Використання в XAML класу локального простору імен - Book", "2.8.Використання в XAML класу локального простору імен - Book\2.8.Використання в XAML класу локального простору імен - Book.csproj", "{E838D462-A0F4-401C-A5A9-71AFDAE7C598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.9.Створення в XAML списку елементів Book", "2.9.Створення в XAML списку елементів Book\2.9.Створення в XAML списку елементів Book.csproj", "{98512A4C-CF97-4049-A3F1-A90E44EC02E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.10.Створення в ресурсі колекції ArrayList елементів Book", "2.10.Створення в ресурсі колекції ArrayList елементів Book\2.10.Створення в ресурсі колекції ArrayList елементів Book.csproj", "{1393081E-5BC6-4B89-897A-94BB9A987517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.11.Попередній приклад з використанням типізованої колекції", "2.11.Попередній приклад з використанням типізованої колекції\2.11.Попередній приклад з використанням типізованої колекції.csproj", "{BE3C9560-4D8D-4571-9D8A-26E490B7D131}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB1DDB8-4067-4E5B-88F7-20417BA57200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB1DDB8-4067-4E5B-88F7-20417BA57200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB1DDB8-4067-4E5B-88F7-20417BA57200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB1DDB8-4067-4E5B-88F7-20417BA57200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13092D21-6745-4169-B70C-8EE2CECE1D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13092D21-6745-4169-B70C-8EE2CECE1D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13092D21-6745-4169-B70C-8EE2CECE1D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13092D21-6745-4169-B70C-8EE2CECE1D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E838D462-A0F4-401C-A5A9-71AFDAE7C598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E838D462-A0F4-401C-A5A9-71AFDAE7C598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E838D462-A0F4-401C-A5A9-71AFDAE7C598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E838D462-A0F4-401C-A5A9-71AFDAE7C598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98512A4C-CF97-4049-A3F1-A90E44EC02E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98512A4C-CF97-4049-A3F1-A90E44EC02E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98512A4C-CF97-4049-A3F1-A90E44EC02E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98512A4C-CF97-4049-A3F1-A90E44EC02E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1393081E-5BC6-4B89-897A-94BB9A987517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1393081E-5BC6-4B89-897A-94BB9A987517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1393081E-5BC6-4B89-897A-94BB9A987517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1393081E-5BC6-4B89-897A-94BB9A987517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {851BC9E5-343B-4C58-83BA-E16884BF745A}
+	EndGlobalSection
+EndGlobal

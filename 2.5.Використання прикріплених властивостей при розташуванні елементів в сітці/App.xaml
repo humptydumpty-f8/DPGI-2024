@@ -1,0 +1,9 @@
+﻿<Application x:Class="_2._5.Використання_прикріплених_властивостей_при_розташуванні_елементів_в_сітці.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_2._5.Використання_прикріплених_властивостей_при_розташуванні_елементів_в_сітці"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
