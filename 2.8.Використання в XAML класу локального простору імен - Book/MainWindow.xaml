@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._8.Використання_в_XAML_класу_локального_простору_імен___Book"
         mc:Ignorable="d"
-        Title="Lection #2" Height="450" Width="800">
+        Title="Lection 2-8" Height="450" Width="800">
     <Grid>
         <Label >
             <local:Book Name="Тошнота" Author="Жан-Поль Сартр" YearPublished="1938"/>

@@ -27,9 +27,9 @@ namespace _2._3.Форма_з_кнопкою_без_XAML
             // Нова форма
             this.Width = 600;
             this.Height = 350;
-            this.Title = "Lection #2";
+            this.Title = "Lection 2-3";
 
-            // Крмпоновка
+            // Компоновка
             Button btnClickMe = new Button();
             btnClickMe.Content = "Click me";
             btnClickMe.Height = 30;

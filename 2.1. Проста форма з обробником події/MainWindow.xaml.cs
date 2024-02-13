@@ -30,5 +30,7 @@ namespace _2._1.Проста_форма_з_обробником_події
         {
             MessageBox.Show(String.Format("Window sizes: \n {0}x{1}", this.ActualHeight, this.ActualWidth));
         }
+
+        
     }
 }

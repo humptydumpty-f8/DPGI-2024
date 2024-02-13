@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._9.Створення_в_XAML_списку_елементів_Book"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Lection 2-9" Height="450" Width="800">
     <Grid>
         <!--Додаємо елемент ListBox -->
         <ListBox x:Name="bookList">

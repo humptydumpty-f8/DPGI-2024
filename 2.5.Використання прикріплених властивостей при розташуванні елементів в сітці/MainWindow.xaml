@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2._5.Використання_прикріплених_властивостей_при_розташуванні_елементів_в_сітці"
         mc:Ignorable="d"
-        Title="Lection #2" Height="450" Width="800">
+        Title="Lection 2-6" Height="450" Width="800">
     <!--Робимо сітку видимою-->
     <Grid>
         <!--Задаємо сітку у вигляді трьох рядків-->

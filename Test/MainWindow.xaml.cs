@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _2._5.Використання_розширення_розмітки
+namespace Test
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,11 +23,6 @@ namespace _2._5.Використання_розширення_розмітки
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void btnOk_Click(object sender, RoutedEventArgs e)
-        {
-            this.Width = int.Parse(txtWidth.Text);
         }
     }
 }

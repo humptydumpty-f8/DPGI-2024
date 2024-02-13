@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Lection #2" Height="450" Width="800">
     <Grid>
-        <Button Content="Click me!" Name="btnClickMe" Click="btnClickMe_Click" 
-                HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button  Name="btnClickMe" Click="btnClickMe_Click" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Width="75">
+            Click me!</Button>
     </Grid>
 </Window>

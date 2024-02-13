@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3.Форма з кноп�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.Використання складних властивостей на прикладі заливки елементів", "2.4.Використання складних властивостей на прикладі заливки елементів\2.4.Використання складних властивостей на прикладі заливки елементів.csproj", "{3F243BE5-475D-4EF8-81F8-4ED95B78DDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5.Використання прикріплених властивостей при розташуванні елементів в сітці", "2.5.Використання прикріплених властивостей при розташуванні елементів в сітці\2.5.Використання прикріплених властивостей при розташуванні елементів в сітці.csproj", "{3DB1DDB8-4067-4E5B-88F7-20417BA57200}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.6.Використання прикріплених властивостей при розташуванні елементів в сітці", "2.5.Використання прикріплених властивостей при розташуванні елементів в сітці\2.6.Використання прикріплених властивостей при розташуванні елементів в сітці.csproj", "{3DB1DDB8-4067-4E5B-88F7-20417BA57200}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.6.Використання розширення розмітки", "2.5.Використання розширення розмітки\2.6.Використання розширення розмітки.csproj", "{13092D21-6745-4169-B70C-8EE2CECE1D1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.5.Використання розширення розмітки", "2.5.Використання розширення розмітки\2.5.Використання розширення розмітки.csproj", "{13092D21-6745-4169-B70C-8EE2CECE1D1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.7.Використання спеціальних символів XAML", "2.7.Використання спеціальних символів XAML\2.7.Використання спеціальних символів XAML.csproj", "{D1C6F638-33B0-4718-8CFC-4BF404A52FFC}"
 EndProject
@@ -24,6 +24,36 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.10.Створення в ресурсі колекції ArrayList елементів Book", "2.10.Створення в ресурсі колекції ArrayList елементів Book\2.10.Створення в ресурсі колекції ArrayList елементів Book.csproj", "{1393081E-5BC6-4B89-897A-94BB9A987517}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.11.Попередній приклад з використанням типізованої колекції", "2.11.Попередній приклад з використанням типізованої колекції\2.11.Попередній приклад з використанням типізованої колекції.csproj", "{BE3C9560-4D8D-4571-9D8A-26E490B7D131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B218EDFF-9AC9-42EF-8452-127F364B8A8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1.StackPanel у формі автентифікації", "..\DPGI-2023\3.1.StackPanel у формі автентифікації\3.1.StackPanel у формі автентифікації.csproj", "{7A4F600A-B823-4C88-961C-D0869F499BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2.Контейнер WrapPanel", "..\DPGI-2023\3.2.Контейнер WrapPanel\3.2.Контейнер WrapPanel.csproj", "{D8078ED8-B594-4846-8580-0F6FE2121183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.DockPanel в макеті простого редактора", "..\DPGI-2023\3.4.DockPanel в макеті простого редактора\3.3.DockPanel в макеті простого редактора.csproj", "{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4.Комбінування контейнерів", "..\DPGI-2023\3.5.Комбінування контейнерів\3.4.Комбінування контейнерів.csproj", "{280D6B31-E5EA-4619-B2E8-16EDB405D02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5.Контейнер Grid", "..\DPGI-2023\3.6.Контейнер Grid\3.5.Контейнер Grid.csproj", "{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.6.Теж саме з додаванням сплітера і декоратора", "..\DPGI-2023\3.7.Теж що в попередньому зддаванням сплітера і обрамлення\3.6.Теж саме з додаванням сплітера і декоратора.csproj", "{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7.UniformGrid у формі з клавіатурою", "..\DPGI-2023\3.8.UniformGrid у формі з клавіатурою\3.7.UniformGrid у формі з клавіатурою.csproj", "{5D38F500-F869-4DEE-A01F-0D5959998417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.8.Програмне керування Grid", "..\DPGI-2023\3.9.Програмне керування Grid\3.8.Програмне керування Grid.csproj", "{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.9.Контейнер Canvas", "..\DPGI-2023\3.10.Контейнер Canvas\3.9.Контейнер Canvas.csproj", "{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.10.Canvas з прямокутниками", "..\DPGI-2023\3.11.Canvas з прямокутниками\3.10.Canvas з прямокутниками.csproj", "{07E7BC56-459A-48FC-BC43-88D641942F7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.11.Програмне керування Canvas", "..\DPGI-2023\3.12.Програмне керування Canvas\3.11.Програмне керування Canvas.csproj", "{B0A19F8B-464A-49E0-A00B-D9A949F000C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.12.Програмне керування StackPanel", "..\DPGI-2023\3.13.Програмне керування StackPanel\3.12.Програмне керування StackPanel.csproj", "{0FF889E2-79F6-4338-A951-896DB04F554F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.13.Програмне керування WrapPanel", "..\DPGI-2023\3.14.Програмне керування WrapPanel\3.13.Програмне керування WrapPanel.csproj", "{BA9128CC-3500-48D2-AE38-B78B6BEBC264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.14.Програмне керування DocPanel+Border", "..\DPGI-2023\3.15.Програмне керування DocPanel\3.14.Програмне керування DocPanel+Border.csproj", "{6717ACD0-DD53-4819-82CD-4EFF9E034B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +105,66 @@ Global
 		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE3C9560-4D8D-4571-9D8A-26E490B7D131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8078ED8-B594-4846-8580-0F6FE2121183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8078ED8-B594-4846-8580-0F6FE2121183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8078ED8-B594-4846-8580-0F6FE2121183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8078ED8-B594-4846-8580-0F6FE2121183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280D6B31-E5EA-4619-B2E8-16EDB405D02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280D6B31-E5EA-4619-B2E8-16EDB405D02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280D6B31-E5EA-4619-B2E8-16EDB405D02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280D6B31-E5EA-4619-B2E8-16EDB405D02D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D38F500-F869-4DEE-A01F-0D5959998417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D38F500-F869-4DEE-A01F-0D5959998417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D38F500-F869-4DEE-A01F-0D5959998417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D38F500-F869-4DEE-A01F-0D5959998417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E7BC56-459A-48FC-BC43-88D641942F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E7BC56-459A-48FC-BC43-88D641942F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E7BC56-459A-48FC-BC43-88D641942F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E7BC56-459A-48FC-BC43-88D641942F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A19F8B-464A-49E0-A00B-D9A949F000C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A19F8B-464A-49E0-A00B-D9A949F000C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A19F8B-464A-49E0-A00B-D9A949F000C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A19F8B-464A-49E0-A00B-D9A949F000C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF889E2-79F6-4338-A951-896DB04F554F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF889E2-79F6-4338-A951-896DB04F554F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF889E2-79F6-4338-A951-896DB04F554F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF889E2-79F6-4338-A951-896DB04F554F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9128CC-3500-48D2-AE38-B78B6BEBC264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9128CC-3500-48D2-AE38-B78B6BEBC264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9128CC-3500-48D2-AE38-B78B6BEBC264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9128CC-3500-48D2-AE38-B78B6BEBC264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6717ACD0-DD53-4819-82CD-4EFF9E034B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6717ACD0-DD53-4819-82CD-4EFF9E034B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6717ACD0-DD53-4819-82CD-4EFF9E034B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6717ACD0-DD53-4819-82CD-4EFF9E034B46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
