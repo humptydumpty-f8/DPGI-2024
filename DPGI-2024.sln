@@ -27,33 +27,55 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.11.Попередній �
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B218EDFF-9AC9-42EF-8452-127F364B8A8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1.StackPanel у формі автентифікації", "..\DPGI-2023\3.1.StackPanel у формі автентифікації\3.1.StackPanel у формі автентифікації.csproj", "{7A4F600A-B823-4C88-961C-D0869F499BEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.Expander+GroupBox+GridSplitter", "4.2.Expander+GroupBox\4.2.Expander+GroupBox+GridSplitter.csproj", "{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2.Контейнер WrapPanel", "..\DPGI-2023\3.2.Контейнер WrapPanel\3.2.Контейнер WrapPanel.csproj", "{D8078ED8-B594-4846-8580-0F6FE2121183}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3.Теж саме з TabControl", "4.3.Теж саме з TabControl\4.3.Теж саме з TabControl.csproj", "{C1573873-FAF6-4374-85D0-A9DD26740CFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.DockPanel в макеті простого редактора", "..\DPGI-2023\3.4.DockPanel в макеті простого редактора\3.3.DockPanel в макеті простого редактора.csproj", "{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4.Записник вхідних дзвінків - ComboBox", "44\4.4.Записник вхідних дзвінків - ComboBox.csproj", "{E051DA37-2ADA-4133-B81D-CD95F06C7665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4.Комбінування контейнерів", "..\DPGI-2023\3.5.Комбінування контейнерів\3.4.Комбінування контейнерів.csproj", "{280D6B31-E5EA-4619-B2E8-16EDB405D02D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1.Мнемонічні команди, створення груп", "41\4.1.Мнемонічні команди, створення груп.csproj", "{CD263457-D242-4112-825E-0569A5750795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5.Контейнер Grid", "..\DPGI-2023\3.6.Контейнер Grid\3.5.Контейнер Grid.csproj", "{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.5.Визначник кодів операторів звязку - ListBox", "4.5.Визначник кодів операторів звязку - ListBox\4.5.Визначник кодів операторів звязку - ListBox.csproj", "{6659750B-B6B4-4482-BB38-C7306F443ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.6.Теж саме з додаванням сплітера і декоратора", "..\DPGI-2023\3.7.Теж що в попередньому зддаванням сплітера і обрамлення\3.6.Теж саме з додаванням сплітера і декоратора.csproj", "{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.6.Елемент Slider", "4.6.Елемент Slider\4.6.Елемент Slider.csproj", "{0002ABED-CFC2-470B-BCD2-05714A8DF4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7.UniformGrid у формі з клавіатурою", "..\DPGI-2023\3.8.UniformGrid у формі з клавіатурою\3.7.UniformGrid у формі з клавіатурою.csproj", "{5D38F500-F869-4DEE-A01F-0D5959998417}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.7.Індикатор прогресу ProgressBar", "4.7.Індикатор прогресу ProgressBar\4.7.Індикатор прогресу ProgressBar.csproj", "{DAD5CAD2-E874-4154-9575-DE25C87A6F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.8.Програмне керування Grid", "..\DPGI-2023\3.9.Програмне керування Grid\3.8.Програмне керування Grid.csproj", "{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.8.Калькулятор дляобчиислення дати закінчення відпустки", "4.8.Калькулятор дляобчиислення дати закінчення відпустки\4.8.Калькулятор дляобчиислення дати закінчення відпустки.csproj", "{68586684-703E-4D95-915F-54AA99C32A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.9.Контейнер Canvas", "..\DPGI-2023\3.10.Контейнер Canvas\3.9.Контейнер Canvas.csproj", "{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.9.ScrollViewer in code", "4.9.ScrollViewer in code\4.9.ScrollViewer in code.csproj", "{D6546653-1603-49D3-A0D3-F53119D5D0E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.10.Canvas з прямокутниками", "..\DPGI-2023\3.11.Canvas з прямокутниками\3.10.Canvas з прямокутниками.csproj", "{07E7BC56-459A-48FC-BC43-88D641942F7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.10.GroupBox in code", "4.10.GroupBox in code\4.10.GroupBox in code.csproj", "{6AC20749-8570-4460-912D-349D8CB32163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.11.Програмне керування Canvas", "..\DPGI-2023\3.12.Програмне керування Canvas\3.11.Програмне керування Canvas.csproj", "{B0A19F8B-464A-49E0-A00B-D9A949F000C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.11.TabItem in code", "4.11.TabItem in code\4.11.TabItem in code.csproj", "{5792931D-D022-4665-A407-DE0F13BBE5ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.12.Програмне керування StackPanel", "..\DPGI-2023\3.13.Програмне керування StackPanel\3.12.Програмне керування StackPanel.csproj", "{0FF889E2-79F6-4338-A951-896DB04F554F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1.StackPanel у формі автентифікації", "3.1.StackPanel у формі автентифікації\3.1.StackPanel у формі автентифікації.csproj", "{7A4F600A-B823-4C88-961C-D0869F499BEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.13.Програмне керування WrapPanel", "..\DPGI-2023\3.14.Програмне керування WrapPanel\3.13.Програмне керування WrapPanel.csproj", "{BA9128CC-3500-48D2-AE38-B78B6BEBC264}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2.Контейнер WrapPanel", "3.2.Контейнер WrapPanel\3.2.Контейнер WrapPanel.csproj", "{D8078ED8-B594-4846-8580-0F6FE2121183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.14.Програмне керування DocPanel+Border", "..\DPGI-2023\3.15.Програмне керування DocPanel\3.14.Програмне керування DocPanel+Border.csproj", "{6717ACD0-DD53-4819-82CD-4EFF9E034B46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.DockPanel в макеті простого редактора", "3.3.DockPanel в макеті простого редактора\3.3.DockPanel в макеті простого редактора.csproj", "{2F4CBC10-F6D7-4E58-ABAF-34024F4722BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4.Комбінування контейнерів", "3.4.Комбінування контейнерів\3.4.Комбінування контейнерів.csproj", "{280D6B31-E5EA-4619-B2E8-16EDB405D02D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5.Контейнер Grid", "3.5.Контейнер Grid\3.5.Контейнер Grid.csproj", "{9BB3B1F2-BFFE-465F-8A88-6F1D4A29F2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.6.Теж саме з додаванням сплітера і декоратора", "3.6.Теж що в попередньому з доаванням сплітера і обрамлення\3.6.Теж саме з додаванням сплітера і декоратора.csproj", "{AD9D1051-00C6-4448-86A3-C5F28B1B9CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.7.UniformGrid у формі з клавіатурою", "3.7.UniformGrid у формі з клавіатурою\3.7.UniformGrid у формі з клавіатурою.csproj", "{5D38F500-F869-4DEE-A01F-0D5959998417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.8.Програмне керування Grid", "3.8.Програмне керування Grid\3.8.Програмне керування Grid.csproj", "{B2A6BB92-C4B3-460E-B0C2-463514DB09B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.9.Контейнер Canvas", "3.9.Контейнер Canvas\3.9.Контейнер Canvas.csproj", "{FD6BECF8-EF58-4D94-9C9F-67C37CAE8D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.10.Canvas з прямокутниками", "3.10.Canvas з прямокутниками\3.10.Canvas з прямокутниками.csproj", "{07E7BC56-459A-48FC-BC43-88D641942F7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.11.Програмне керування Canvas", "3.11.Програмне керування Canvas\3.11.Програмне керування Canvas.csproj", "{B0A19F8B-464A-49E0-A00B-D9A949F000C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.12.Програмне керування StackPanel", "3.12.Програмне керування StackPanel\3.12.Програмне керування StackPanel.csproj", "{0FF889E2-79F6-4338-A951-896DB04F554F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.13.Програмне керування WrapPanel", "3.13.Програмне керування WrapPanel\3.13.Програмне керування WrapPanel.csproj", "{BA9128CC-3500-48D2-AE38-B78B6BEBC264}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.14.Програмне керування DocPanel+Border", "3.14.Програмне керування DocPanel\3.14.Програмне керування DocPanel+Border.csproj", "{6717ACD0-DD53-4819-82CD-4EFF9E034B46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +131,50 @@ Global
 		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B218EDFF-9AC9-42EF-8452-127F364B8A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1573873-FAF6-4374-85D0-A9DD26740CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1573873-FAF6-4374-85D0-A9DD26740CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1573873-FAF6-4374-85D0-A9DD26740CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1573873-FAF6-4374-85D0-A9DD26740CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E051DA37-2ADA-4133-B81D-CD95F06C7665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E051DA37-2ADA-4133-B81D-CD95F06C7665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E051DA37-2ADA-4133-B81D-CD95F06C7665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E051DA37-2ADA-4133-B81D-CD95F06C7665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD263457-D242-4112-825E-0569A5750795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD263457-D242-4112-825E-0569A5750795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD263457-D242-4112-825E-0569A5750795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD263457-D242-4112-825E-0569A5750795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6659750B-B6B4-4482-BB38-C7306F443ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6659750B-B6B4-4482-BB38-C7306F443ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6659750B-B6B4-4482-BB38-C7306F443ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6659750B-B6B4-4482-BB38-C7306F443ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0002ABED-CFC2-470B-BCD2-05714A8DF4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0002ABED-CFC2-470B-BCD2-05714A8DF4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0002ABED-CFC2-470B-BCD2-05714A8DF4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0002ABED-CFC2-470B-BCD2-05714A8DF4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD5CAD2-E874-4154-9575-DE25C87A6F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD5CAD2-E874-4154-9575-DE25C87A6F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD5CAD2-E874-4154-9575-DE25C87A6F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD5CAD2-E874-4154-9575-DE25C87A6F30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68586684-703E-4D95-915F-54AA99C32A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68586684-703E-4D95-915F-54AA99C32A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68586684-703E-4D95-915F-54AA99C32A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68586684-703E-4D95-915F-54AA99C32A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6546653-1603-49D3-A0D3-F53119D5D0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6546653-1603-49D3-A0D3-F53119D5D0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6546653-1603-49D3-A0D3-F53119D5D0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6546653-1603-49D3-A0D3-F53119D5D0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC20749-8570-4460-912D-349D8CB32163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC20749-8570-4460-912D-349D8CB32163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC20749-8570-4460-912D-349D8CB32163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC20749-8570-4460-912D-349D8CB32163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5792931D-D022-4665-A407-DE0F13BBE5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5792931D-D022-4665-A407-DE0F13BBE5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5792931D-D022-4665-A407-DE0F13BBE5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5792931D-D022-4665-A407-DE0F13BBE5ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A4F600A-B823-4C88-961C-D0869F499BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU

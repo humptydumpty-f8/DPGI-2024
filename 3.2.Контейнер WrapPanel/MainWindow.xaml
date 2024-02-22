@@ -1,0 +1,22 @@
+﻿<Window x:Class="_3._2.Контейнер_WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._2.Контейнер_WrapPanel"
+        mc:Ignorable="d"
+        Title="Lection 3-2" Height="450" Width="800">
+    <Grid>
+        <!--Створення контейнера WrapPanel-->
+        <!--Обмежується мінімальна та максимальна ширина елементів і задаються відступи-->
+        <WrapPanel Orientation="Vertical">
+
+            <Label Content="Login" Margin="5,10,0,0" MaxWidth="200" MinWidth="100"/>
+            <TextBox x:Name="txtLog" Text="" Margin="5" MaxWidth="200" MinWidth="100"/>
+            <Label Content="Password" Margin="5" MaxWidth="200" MinWidth="100"/>
+            <TextBox x:Name="txtPassw" Text="" Margin="5,0" MaxWidth="200" MinWidth="100"/>
+            <Button x:Name="btnOk" Content="Ok" Click="btnOk_Click" Margin="5,20" MaxWidth="200" MinWidth="100"/>
+
+        </WrapPanel>
+    </Grid>
+</Window>

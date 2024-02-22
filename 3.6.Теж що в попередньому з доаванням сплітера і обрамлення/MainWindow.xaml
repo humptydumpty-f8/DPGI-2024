@@ -1,0 +1,53 @@
+﻿<Window x:Class="_3._7.Теж_що_в_попередньому_зддаванням_сплітера_і_обрамлення.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._7.Теж_що_в_попередньому_зддаванням_сплітера_і_обрамлення"
+        mc:Ignorable="d"
+        Title="Lection 3-6" Height="450" Width="800">
+    <Grid>
+        <!--Зовнішній контейнер-->
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+                <Button Width="100" Margin="10" Name="btnOk" Click="btnOk_Click">OK</Button>
+                <Button Width="100" Margin="10" Name="btnCancel" Click="btnCancel_Click">Cancel</Button>
+            </WrapPanel>
+
+            <!--Основний вкладений контейнер 4x3 з обрамленням-->
+            <Border BorderThickness="2" Background="AliceBlue" BorderBrush="Black" CornerRadius="15">
+                <Grid VerticalAlignment="Center" Margin="50" ShowGridLines="False">
+                    <!--Задаємо 3 колонки-->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <!--Колонка сплітера-->
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <!--Задаємо 4 рядки-->
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!--Обєднуємо дві комірки в одну і розміщуемо в ній заголовок-->
+                    <Label Content="Forms parameters" Grid.Row="0" Grid.Column="0" 
+                       Grid.ColumnSpan="3" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+                    <!--Розміщуємо інші елементи в комірках сітки-->
+                    <Label Content="Title" Grid.Row="1" Grid.Column="0"/>
+                    <TextBox x:Name="txtTitle" Text="New title" Grid.Row="1" Grid.Column="2"/>
+                    <Label Content="Width" Grid.Row="2" Grid.Column="0"/>
+                    <TextBox x:Name="txtWidth" Text="400" Grid.Row="2" Grid.Column="2"/>
+                    <Label Content="Heigt" Grid.Row="3" Grid.Column="0"/>
+                    <TextBox x:Name="txtHeigt" Text="300" Grid.Row="3" Grid.Column="2"/>
+                    <!--Сплітеру необхідно задати Alignment="Stretch" і Width-->
+                    <GridSplitter Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" ShowsPreview="False"
+                              VerticalAlignment="Stretch" HorizontalAlignment="Center"
+                              Width="4"/>
+
+                </Grid>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="_3._1.StackPanel_у_формі_автентифікації.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._1.StackPanel_у_формі_автентифікації"
+        mc:Ignorable="d"
+        Title="Lection 3-1" Height="350" Width="400" >
+    <Grid >
+        <!--Створення контейнера StackPanel-->
+        <StackPanel MaxWidth="200" MaxHeight="250">
+            <Label  Content="Login"/>
+            <TextBox  x:Name="txtLog" Text=""/>
+            <Label  Content="Password"/>
+            <PasswordBox x:Name="psvBox" Password=""/>
+            <Button Margin="0 15" x:Name="btnOk" Content="Ok" Click="btnOk_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

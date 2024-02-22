@@ -1,0 +1,45 @@
+﻿<Window x:Class="_3._6.Контейнер_Grid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._6.Контейнер_Grid"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--Зовнішній контейнер-->
+        <DockPanel>
+            <WrapPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center">
+                <Button MinWidth="100" Margin="10" Name="btnOk" Click="btnOk_Click">OK</Button>
+                <Button MinWidth="100" Margin="10" Name="btnCancel" Click="btnCancel_Click">Cancel</Button>
+            </WrapPanel>
+
+            <!--Основний вкладений контейнер 4x2-->
+            <Grid VerticalAlignment="Center" Margin="50">
+                <!--Задаємо 2 колонки-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <!--Задаємо 4 рядки-->
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <!--Обєднуємо дві комірки в одну і розміщуемо в ній заголовок-->
+                <Label Content="Forms parameters" Grid.Row="0" Grid.Column="0" 
+                       Grid.ColumnSpan="2" HorizontalAlignment="Center" FontWeight="ExtraBold"/>
+                <!--Розміщуємо інші елементи в комірках сітки-->
+                <Label Content="Title" Grid.Row="1" Grid.Column="0"/>
+                <TextBox x:Name="txtTitle" Text="New title" Grid.Row="1" Grid.Column="1"/>
+                <Label Content="Width" Grid.Row="2" Grid.Column="0"/>
+                <TextBox x:Name="txtWidth" Text="400" Grid.Row="2" Grid.Column="1"/>
+                <Label Content="Heigt" Grid.Row="3" Grid.Column="0"/>
+                <TextBox x:Name="txtHeigt" Text="300" Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
