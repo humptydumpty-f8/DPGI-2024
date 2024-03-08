@@ -1,0 +1,18 @@
+﻿<Window x:Class="_47Невизначений_індикатор_прогресу.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_47Невизначений_індикатор_прогресу"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel >
+            <GroupBox Header="ProgressBar" Height="80" >
+                <ProgressBar x:Name="pbStatus" Height="30"/>
+            </GroupBox>
+            <Button x:Name="btn" Width="150" Click="btn_Click">Start/stop progress</Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

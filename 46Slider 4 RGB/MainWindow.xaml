@@ -1,0 +1,44 @@
+﻿<Window x:Class="_46Slider_4_RGB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_46Slider_4_RGB"
+        mc:Ignorable="d"
+        Title="Lection 4-6" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <StackPanel Margin="10" Orientation="Horizontal">
+            <StackPanel>
+                <Label>R:</Label>
+                <Slider x:Name="slR" 
+                        Height="300"                        
+                        Value="15" Maximum="255" 
+                        TickFrequency="10" SelectionStart="10"
+                        IsSelectionRangeEnabled="True" 
+                        Orientation="Vertical"
+                        ValueChanged="slR_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>G:</Label>
+                <Slider x:Name="slG" 
+                        Height="300"                        
+                        Value="50" Maximum="255" 
+                        TickFrequency="10" 
+                        IsSelectionRangeEnabled="True" 
+                        Orientation="Vertical"
+                        ValueChanged="slG_ValueChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>B:</Label>
+                <Slider x:Name="slB" 
+                        Height="300"                        
+                        Value="150" Maximum="255" 
+                        TickFrequency="10" 
+                        IsSelectionRangeEnabled="True" 
+                        Orientation="Vertical"
+                        ValueChanged="slB_ValueChanged"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>

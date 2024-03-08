@@ -1,0 +1,19 @@
+﻿<Window x:Class="_42_RadioButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_42_RadioButton"
+        mc:Ignorable="d"
+        Title="Lection 4-2" Height="450" Width="800">
+    <Grid>
+        <StackPanel x:Name="stackPanel" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <RadioButton GroupName="Languages" Content="C#" IsChecked="False" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Languages" Content="VB.NET" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Languages" Content="C++" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="Technologies" Content="WPF" IsChecked="True" />
+            <RadioButton GroupName="Technologies" Content="WinForms" />
+            <RadioButton GroupName="Technologies" Content="ASP.NET" />
+        </StackPanel>
+    </Grid>
+</Window>

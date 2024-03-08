@@ -8,7 +8,7 @@
         Title="Lection 4-1" Height="450" Width="800">
     <Grid>
         <!--Задаємр лінійки прокручування-->
-        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible">
             <!--Створюємо групу елементів-->
             <GroupBox Header="Autefication parameters" Margin="50" >
                 <Grid Width="200" Height="100">
@@ -25,15 +25,15 @@
                     <!--Створення мнемонічних команд Alt+G і Alt+W-->
                     <Label Grid.Row="0" Grid.Column="0" Target="{Binding ElementName=txtLogin}">Lo_gin</Label>
                     <TextBox x:Name="txtLogin" Grid.Column="2" Grid.Row="0" ToolTip="Alt+G">Admin</TextBox>
-                    <Label Grid.Row="1" Grid.Column="0" Target="{Binding ElementName=txtPassword}">Pass_word</Label>
+                    <Label Grid.Row="1" Grid.Column="0" Target="{Binding ElementName=pswPassword}">Pass_word</Label>
                     <PasswordBox x:Name="pswPassword" Grid.Column="2" Grid.Row="1" ToolTip="Alt+W"></PasswordBox>
                     <!--Задаємд вид курсора при наведенні миші на сплітер-->
                     <WrapPanel Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <!--Визначення кнопок, що спрацьовують при натисненні Enter та Esc-->
-                        <Button  x:Name="btnOk" Grid.Row="2" Grid.Column="0" Width="50" IsDefault="True"
-                                 Click="btnOk_Click">Ok</Button>
-                        <Button  x:Name="btnConsole" Grid.Row="2" Grid.Column="2" Width="50" IsCancel="True"
-                                 Click="btnConsole_Click">Console</Button>
+                        <Button  x:Name="btnOk" Grid.Row="2" Grid.Column="0" Width="50" IsDefault="True" Margin="5"
+                                 Click="btnOk_Click">O_k</Button>
+                        <Button  x:Name="btnConsole" Grid.Row="2" Grid.Column="2" Width="50" IsCancel="True" Margin="5"
+                                 Click="btnConsole_Click">Conso_le</Button>
                     </WrapPanel>
                     <GridSplitter Width="4" Grid.Column="1"  Grid.Row="0" Grid.RowSpan="2" 
                       HorizontalAlignment="Center" VerticalAlignment="Stretch" Cursor="SizeWE"/>

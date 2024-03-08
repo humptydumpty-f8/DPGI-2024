@@ -1,0 +1,26 @@
+﻿<Window x:Class="_41_Лого_КПІ_з_підказуванням.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_41_Лого_КПІ_з_підказуванням"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <StackPanel>
+            <TextBlock Margin="25 10" FontWeight="ExtraBold">
+                <Hyperlink Name="hlKpi" Click="hlKpi_Click">
+                    <Hyperlink.ToolTip>
+                        <Image Source="Logo\logo.png" />
+                    </Hyperlink.ToolTip>
+                    Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock Margin="25 10" ToolTip="No logo" >
+                <Hyperlink Name="hlCte" Click="hlCte_Click" >
+                  Кафедра цифрових технологій в енергетиці  
+                </Hyperlink>
+            </TextBlock>            
+        </StackPanel>
+    </Grid>
+</Window>

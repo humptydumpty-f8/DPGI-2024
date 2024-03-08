@@ -1,0 +1,18 @@
+﻿<Window x:Class="_5._3.Теж_саме_звизначенням_стилю_в_App.xaml.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5._3.Теж_саме_звизначенням_стилю_в_App.xaml"
+        mc:Ignorable="d"
+        Title="Lection 5-3" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <!--Визначення стиля в App.xaml-->
+            <!--Явне застосування стилю-->
+            <Label Style="{StaticResource BigFontStyle}">Label</Label>
+            <TextBox Style="{StaticResource BigFontStyle}">TextoBx</TextBox>
+            <Button Style="{StaticResource BigFontStyle}">Button</Button>
+        </StackPanel>
+    </Grid>
+</Window>

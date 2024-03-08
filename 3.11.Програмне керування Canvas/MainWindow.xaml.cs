@@ -52,7 +52,7 @@ namespace _3._12.Програмне_керування_Canvas
             // Set content of the Window
             this.Content = canvasPanel;
 
-            canvasPanel.MouseLeftButtonDown += new MouseButtonEventHandler(RemoveRectangle);
+            canvasPanel.MouseLeftButtonDown += RemoveRectangle;
         }
 
         private void RemoveRectangle(object sender, MouseButtonEventArgs e)

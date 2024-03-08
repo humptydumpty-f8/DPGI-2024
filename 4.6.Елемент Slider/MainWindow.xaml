@@ -18,9 +18,16 @@
             </GroupBox>
 
             <GroupBox Header="Slider" DockPanel.Dock="Bottom" Height="80">
-                <Slider x:Name="sldSize" Height="30" Minimum="10" Maximum="32" 
-                        TickFrequency="5" TickPlacement="Both" IsSnapToTickEnabled="True"
-                        SelectionStart="10" IsSelectionRangeEnabled="True"
+                <Slider x:Name="sldSize" 
+                        Height="30" 
+                        Minimum="10" 
+                        Maximum="32" 
+                        TickFrequency="10" 
+                        TickPlacement="Both" 
+                        IsSnapToTickEnabled="False"
+                        SelectionStart="10" 
+                        IsSelectionRangeEnabled="True"
+                        Value="15"
                         ValueChanged="sldSize_ValueChanged"></Slider>
             </GroupBox>
         </DockPanel>

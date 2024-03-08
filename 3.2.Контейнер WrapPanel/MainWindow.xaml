@@ -9,9 +9,9 @@
     <Grid>
         <!--Створення контейнера WrapPanel-->
         <!--Обмежується мінімальна та максимальна ширина елементів і задаються відступи-->
-        <WrapPanel Orientation="Vertical">
+        <WrapPanel >
 
-            <Label Content="Login" Margin="5,10,0,0" MaxWidth="200" MinWidth="100"/>
+            <Label Content="Login" Margin="5,10" MaxWidth="200" MinWidth="100"/>
             <TextBox x:Name="txtLog" Text="" Margin="5" MaxWidth="200" MinWidth="100"/>
             <Label Content="Password" Margin="5" MaxWidth="200" MinWidth="100"/>
             <TextBox x:Name="txtPassw" Text="" Margin="5,0" MaxWidth="200" MinWidth="100"/>
