@@ -19,7 +19,7 @@
                 <!--Мультитригер-->
                 <MultiTrigger>
                     <MultiTrigger.Conditions>
-                        <Condition Property="Button.IsMouseOver" Value="True"/>
+                        <Condition Property="Control.IsMouseOver" Value="True"/>
                         <Condition Property="Control.IsFocused" Value="True"/>
                     </MultiTrigger.Conditions>
                     <MultiTrigger.Setters>

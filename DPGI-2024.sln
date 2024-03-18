@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.34301.259
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2.Форма з кнопкою і обробником події кліку", "DPGI-2024\2.2.Форма з кнопкою і обробником події кліку.csproj", "{3529465A-AA89-40D8-8D8B-686FEFA1E799}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1. Проста форма з обробником події", "2.1. Проста форма з обробником події\2.1. Проста форма з обробником події.csproj", "{5FDA8978-583A-403B-9A74-F31BA7B12D29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3.Форма з кнопкою без XAML", "2.3.Форма з кнопкою без XAML\2.3.Форма з кнопкою без XAML.csproj", "{7F9F853B-340F-4272-AFE1-34DA8CBD4A68}"
@@ -27,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.11.Попередній �
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B218EDFF-9AC9-42EF-8452-127F364B8A8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.Expander+GroupBox+GridSplitter", "4.2.Expander+GroupBox\4.2.Expander+GroupBox+GridSplitter.csproj", "{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3.Expander+GroupBox+GridSplitter", "4.2.Expander+GroupBox\4.3.Expander+GroupBox+GridSplitter.csproj", "{13BA39E0-6DCC-4A38-B31E-72FB15A2B173}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3.Групування за допомогою TabControl", "4.3.Теж саме з TabControl\4.3.Групування за допомогою TabControl.csproj", "{C1573873-FAF6-4374-85D0-A9DD26740CFF}"
 EndProject
@@ -127,16 +125,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.RadioButton in code", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.CheckBox in code", "42 CheckBox in code\4.2.CheckBox in code.csproj", "{F153645C-31E1-4E21-82DC-58B1E7572070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 .Форма з кнопкою і обробником події", "22 Форма з кнопкою і обробником події\2.2 .Форма з кнопкою і обробником події.csproj", "{7AE190FE-1BFF-44B3-9595-AE1CD0C26978}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3529465A-AA89-40D8-8D8B-686FEFA1E799}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FDA8978-583A-403B-9A74-F31BA7B12D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -381,6 +377,10 @@ Global
 		{F153645C-31E1-4E21-82DC-58B1E7572070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F153645C-31E1-4E21-82DC-58B1E7572070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F153645C-31E1-4E21-82DC-58B1E7572070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE190FE-1BFF-44B3-9595-AE1CD0C26978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE190FE-1BFF-44B3-9595-AE1CD0C26978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE190FE-1BFF-44B3-9595-AE1CD0C26978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE190FE-1BFF-44B3-9595-AE1CD0C26978}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
