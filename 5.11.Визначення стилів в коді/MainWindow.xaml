@@ -14,7 +14,7 @@
                 <TextBox Padding="5" Margin="5" Name="txtSurname" >Surname</TextBox>
                 <TextBox Padding="5" Margin="5" Name="txtTelephone" >Telephone</TextBox>
                 <!--Застосування базового стиля-->
-                <Button Padding="5" Margin="5" Name="btn" Click="Button_Click">Send personal data</Button>
+                <Button Padding="5" Margin="5" Name="btn" >Send personal data</Button>
             </StackPanel>
         </GroupBox>
     </Grid>

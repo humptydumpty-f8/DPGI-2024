@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp27.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp27"
+        mc:Ignorable="d"
+        Title="Lection 7-6" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Command="New" />
+                    <MenuItem Command="Help"/>
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Edit">
+                    <MenuItem Command="Cut" />
+                    <MenuItem Command="Copy" />
+                    <MenuItem Command="Paste" />
+                </MenuItem>
+            </Menu>
+
+            <!--Додавання панелі інструментів-->
+            <ToolBar DockPanel.Dock="Top">
+                <Button>New</Button>
+                <Button DockPanel.Dock="Bottom" Margin="10" Command="ApplicationCommands.Help">Help</Button>
+                <Button>Exit</Button>
+            </ToolBar>
+
+            <!--Контекстне меню для TextBox-->
+            <TextBox Margin="10" AcceptsReturn="True" Name="txtEditor" MouseEnter="txtEditor_MouseEnter">
+                <TextBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="New"/>
+                        <MenuItem Header="Help" Command="ApplicationCommands.Help"/>
+                        <MenuItem Header="Exit"/>
+                    </ContextMenu>
+                </TextBox.ContextMenu>
+
+            </TextBox>
+        </DockPanel>
+
+    </Grid>
+</Window>

@@ -24,6 +24,13 @@ namespace Test
         {
             InitializeComponent();
 
+            StackPanel CustomCommandStackPanel = new StackPanel();
+            Button CustomCommandButton = new Button();
+            CustomCommandStackPanel.Children.Add(CustomCommandButton);
+
+            mainGrid.Children.Add(CustomCommandStackPanel);
+            this.Content = CustomCommandStackPanel;
+
         }
     }
 }

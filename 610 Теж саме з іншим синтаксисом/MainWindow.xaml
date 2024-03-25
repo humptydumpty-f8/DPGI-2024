@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp18"
+        mc:Ignorable="d"
+        Title="Lection 6-10" Height="450" Width="800">
+    <Grid Background="Red">
+        <Border Margin="100" BorderBrush="Silver" BorderThickness="3" Padding="1">
+            <!--Привязка до властивостей контейнера-->
+            <!--Колір фону контейнера стає кольором тексту-->
+            <TextBox Background="Yellow" FontSize="28">
+                <TextBox.Foreground>
+                    <Binding Path="Background">
+                        <Binding.RelativeSource>
+                            <RelativeSource Mode="FindAncestor" AncestorType="{x:Type Grid}"/>
+                        </Binding.RelativeSource>
+                    </Binding>
+                </TextBox.Foreground>
+                Text
+            </TextBox>
+        </Border>
+    </Grid>
+</Window>

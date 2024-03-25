@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp16"
+        mc:Ignorable="d"
+        Title="Lection 6-8" Height="450" Width="800">
+    <Grid>
+        <Border Margin="100" BorderBrush="Silver" BorderThickness="3" Padding="1">
+            <!--Привязка в самому контролі-->
+            <!--В текстовому полі відображається код кольору фону, а змінивши код отримуємо інший колір-->
+            <TextBox Text="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Background, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </Border>
+    </Grid>
+</Window>

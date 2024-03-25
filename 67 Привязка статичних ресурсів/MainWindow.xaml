@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15"
+        mc:Ignorable="d"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="Lection 6-7" Height="450" Width="800">
+
+    <Window.Resources>
+        <!--Статичні ресурси (вимагають sys)-->
+        <sys:String x:Key="pi">Tarnavski Yu.</sys:String>
+        <sys:String x:Key="email">TarnavskiYu@gmail.com</sys:String>
+        <LinearGradientBrush x:Key="WindowBackgroundBrush">
+            <GradientStop Offset="0" Color="Silver"/>
+            <GradientStop Offset="1" Color="Gray"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+    
+    <Grid>
+        <Border Margin="10" BorderBrush="Silver" BorderThickness="3" Padding="1">
+            <!--Привязка статичних ресурсів з використанням Source та без нього-->
+            <StackPanel Margin="10" Background="{Binding Source={StaticResource WindowBackgroundBrush}}">
+                <TextBlock Text="{StaticResource pi}" FontSize="30" />
+                <TextBlock>E-mail: "<TextBlock Text="{StaticResource email}" />" </TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
