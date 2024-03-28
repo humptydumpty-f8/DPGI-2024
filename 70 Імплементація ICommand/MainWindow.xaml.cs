@@ -28,11 +28,11 @@ namespace _70_Імплементація_ICommand
         {
             InitializeComponent();
 
-            //3-привязка і реєстрація команди
+            //2-привязка і реєстрація команди
             CommandBinding customCommandBinding = new CommandBinding(CustomTestCommand);
             this.CommandBindings.Add(customCommandBinding);
 
-            //4-створення кнопки з командою
+            //3-створення кнопки з командою
             StackPanel CustomCommandStackPanel = new StackPanel();
 
             Button CustomCommandButton = new Button();

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _70_Створення_RoutedCommand_чисто_в_коді
+namespace _70_Створення_RoutedCommand_1
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -26,21 +26,8 @@ namespace _70_Створення_RoutedCommand_чисто_в_коді
         public MainWindow()
         {
             InitializeComponent();
-
-            //3-привязка і реєстрація команди
-            CommandBinding customCommandBinding = new CommandBinding(CustomRoutedCommand, ExecutedCustomCommand, CanExecuteCustomCommand);            
-            this.CommandBindings.Add(customCommandBinding);
-
-            //4-створення кнопки з командою
-            StackPanel CustomCommandStackPanel = new StackPanel();
-
-            Button CustomCommandButton = new Button();
-            CustomCommandButton.Content = "Custom Command Button";
-            CustomCommandButton.Command = CustomRoutedCommand;
-            
-            CustomCommandStackPanel.Children.Add(CustomCommandButton);            
-            this.Content = CustomCommandStackPanel;
         }
+
         //2-створення обробників подій
         private void ExecutedCustomCommand(object sender, ExecutedRoutedEventArgs e)
         {
@@ -60,6 +47,5 @@ namespace _70_Створення_RoutedCommand_чисто_в_коді
                 e.CanExecute = false;
             }
         }
-
     }
 }

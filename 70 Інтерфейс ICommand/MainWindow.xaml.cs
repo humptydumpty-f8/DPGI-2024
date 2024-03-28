@@ -20,7 +20,7 @@ namespace _70_Інтерфейс_ICommand
     /// </summary>
     public partial class MainWindow : Window
     {
-        //визначення команди
+        //1-визначення команди
         public static RoutedCommand CustomRoutedCommand = new RoutedCommand();
 
         public MainWindow()
@@ -28,7 +28,7 @@ namespace _70_Інтерфейс_ICommand
             InitializeComponent();
         }
         
-        // створення обробників подій
+        //2-створення обробників подій
         private void ExecutedCustomCommand(object sender, ExecutedRoutedEventArgs e)
         {
             MessageBox.Show("Custom Command Executed");
