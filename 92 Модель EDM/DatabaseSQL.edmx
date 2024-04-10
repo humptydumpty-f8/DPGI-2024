@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище DatabaseSQLModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ACC_TRANSACTION">
+          <Key>
+            <PropertyRef Name="TXN_ID" />
+          </Key>
+          <Property Name="TXN_ID" Type="numeric" Precision="19" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AMOUNT" Type="float" Nullable="false" />
+          <Property Name="FUNDS_AVAIL_DATE" Type="datetime" Nullable="false" />
+          <Property Name="TXN_DATE" Type="datetime" Nullable="false" />
+          <Property Name="TXN_TYPE_CD" Type="varchar" MaxLength="10" />
+          <Property Name="ACCOUNT_ID" Type="int" />
+          <Property Name="EXECUTION_BRANCH_ID" Type="int" />
+          <Property Name="TELLER_EMP_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="ACCOUNT">
+          <Key>
+            <PropertyRef Name="ACCOUNT_ID" />
+          </Key>
+          <Property Name="ACCOUNT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AVAIL_BALANCE" Type="float" />
+          <Property Name="CLOSE_DATE" Type="datetime" />
+          <Property Name="LAST_ACTIVITY_DATE" Type="datetime" />
+          <Property Name="OPEN_DATE" Type="datetime" Nullable="false" />
+          <Property Name="PENDING_BALANCE" Type="float" />
+          <Property Name="STATUS" Type="varchar" MaxLength="10" />
+          <Property Name="CUST_ID" Type="int" />
+          <Property Name="OPEN_BRANCH_ID" Type="int" Nullable="false" />
+          <Property Name="OPEN_EMP_ID" Type="int" Nullable="false" />
+          <Property Name="PRODUCT_CD" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BRANCH">
+          <Key>
+            <PropertyRef Name="BRANCH_ID" />
+          </Key>
+          <Property Name="BRANCH_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADDRESS" Type="varchar" MaxLength="30" />
+          <Property Name="CITY" Type="varchar" MaxLength="20" />
+          <Property Name="NAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="STATE" Type="varchar" MaxLength="10" />
+          <Property Name="ZIP_CODE" Type="varchar" MaxLength="12" />
+        </EntityType>
+        <EntityType Name="BUSINESS">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="INCORP_DATE" Type="datetime" />
+          <Property Name="NAME" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="STATE_ID" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CUST_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CUSTOMER">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="CUST_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ADDRESS" Type="varchar" MaxLength="30" />
+          <Property Name="CITY" Type="varchar" MaxLength="20" />
+          <Property Name="CUST_TYPE_CD" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="FED_ID" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="POSTAL_CODE" Type="varchar" MaxLength="10" />
+          <Property Name="STATE" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DEPARTMENT">
+          <Key>
+            <PropertyRef Name="DEPT_ID" />
+          </Key>
+          <Property Name="DEPT_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMP_ID" />
+          </Key>
+          <Property Name="EMP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="START_DATE" Type="datetime" Nullable="false" />
+          <Property Name="TITLE" Type="varchar" MaxLength="20" />
+          <Property Name="ASSIGNED_BRANCH_ID" Type="int" />
+          <Property Name="DEPT_ID" Type="int" />
+          <Property Name="SUPERIOR_EMP_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="INDIVIDUAL">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="BIRTH_DATE" Type="datetime" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="CUST_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OFFICER">
+          <Key>
+            <PropertyRef Name="OFFICER_ID" />
+          </Key>
+          <Property Name="OFFICER_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="END_DATE" Type="datetime" />
+          <Property Name="FIRST_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="LAST_NAME" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="START_DATE" Type="datetime" Nullable="false" />
+          <Property Name="TITLE" Type="varchar" MaxLength="20" />
+          <Property Name="CUST_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="PRODUCT_CD" />
+          </Key>
+          <Property Name="PRODUCT_CD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="DATE_OFFERED" Type="datetime" />
+          <Property Name="DATE_RETIRED" Type="datetime" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PRODUCT_TYPE_CD" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="PRODUCT_TYPE">
+          <Key>
+            <PropertyRef Name="PRODUCT_TYPE_CD" />
+          </Key>
+          <Property Name="PRODUCT_TYPE_CD" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="NAME" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="ACC_TRANSACTION_ACCOUNT_FK">
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ACCOUNT">
+              <PropertyRef Name="ACCOUNT_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="ACCOUNT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACC_TRANSACTION_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="EXECUTION_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACC_TRANSACTION_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="TELLER_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="OPEN_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="0..1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="OPEN_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_PRODUCT_FK">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_CD" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="PRODUCT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BUSINESS_EMPLOYEE_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+          <End Role="BUSINESS" Type="Self.BUSINESS" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="BUSINESS">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="0..1" />
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE">
+              <PropertyRef Name="ASSIGNED_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_DEPARTMENT_FK">
+          <End Role="DEPARTMENT" Type="Self.DEPARTMENT" Multiplicity="0..1" />
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTMENT">
+              <PropertyRef Name="DEPT_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE">
+              <PropertyRef Name="DEPT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1" />
+          <End Role="EMPLOYEE1" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE1">
+              <PropertyRef Name="SUPERIOR_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="INDIVIDUAL_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+          <End Role="INDIVIDUAL" Type="Self.INDIVIDUAL" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="INDIVIDUAL">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OFFICER_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="0..1" />
+          <End Role="OFFICER" Type="Self.OFFICER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="OFFICER">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_PRODUCT_TYPE_FK">
+          <End Role="PRODUCT_TYPE" Type="Self.PRODUCT_TYPE" Multiplicity="0..1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_TYPE">
+              <PropertyRef Name="PRODUCT_TYPE_CD" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_TYPE_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище DatabaseSQLModelContainer">
+          <EntitySet Name="ACC_TRANSACTION" EntityType="Self.ACC_TRANSACTION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ACCOUNT" EntityType="Self.ACCOUNT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BRANCH" EntityType="Self.BRANCH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BUSINESS" EntityType="Self.BUSINESS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CUSTOMER" EntityType="Self.CUSTOMER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DEPARTMENT" EntityType="Self.DEPARTMENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EMPLOYEE" EntityType="Self.EMPLOYEE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INDIVIDUAL" EntityType="Self.INDIVIDUAL" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OFFICER" EntityType="Self.OFFICER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRODUCT" EntityType="Self.PRODUCT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRODUCT_TYPE" EntityType="Self.PRODUCT_TYPE" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="ACC_TRANSACTION_ACCOUNT_FK" Association="Self.ACC_TRANSACTION_ACCOUNT_FK">
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACC_TRANSACTION_BRANCH_FK" Association="Self.ACC_TRANSACTION_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACC_TRANSACTION_EMPLOYEE_FK" Association="Self.ACC_TRANSACTION_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_BRANCH_FK" Association="Self.ACCOUNT_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_CUSTOMER_FK" Association="Self.ACCOUNT_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_EMPLOYEE_FK" Association="Self.ACCOUNT_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_PRODUCT_FK" Association="Self.ACCOUNT_PRODUCT_FK">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="BUSINESS_EMPLOYEE_FK" Association="Self.BUSINESS_EMPLOYEE_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="BUSINESS" EntitySet="BUSINESS" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_BRANCH_FK" Association="Self.EMPLOYEE_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_DEPARTMENT_FK" Association="Self.EMPLOYEE_DEPARTMENT_FK">
+            <End Role="DEPARTMENT" EntitySet="DEPARTMENT" />
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_EMPLOYEE_FK" Association="Self.EMPLOYEE_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="EMPLOYEE1" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="INDIVIDUAL_CUSTOMER_FK" Association="Self.INDIVIDUAL_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="INDIVIDUAL" EntitySet="INDIVIDUAL" />
+          </AssociationSet>
+          <AssociationSet Name="OFFICER_CUSTOMER_FK" Association="Self.OFFICER_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="OFFICER" EntitySet="OFFICER" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_PRODUCT_TYPE_FK" Association="Self.PRODUCT_PRODUCT_TYPE_FK">
+            <End Role="PRODUCT_TYPE" EntitySet="PRODUCT_TYPE" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseSQLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ACC_TRANSACTION">
+          <Key>
+            <PropertyRef Name="TXN_ID" />
+          </Key>
+          <Property Name="TXN_ID" Type="Decimal" Precision="19" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AMOUNT" Type="Double" Nullable="false" />
+          <Property Name="FUNDS_AVAIL_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TXN_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TXN_TYPE_CD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ACCOUNT_ID" Type="Int32" />
+          <Property Name="EXECUTION_BRANCH_ID" Type="Int32" />
+          <Property Name="TELLER_EMP_ID" Type="Int32" />
+          <NavigationProperty Name="ACCOUNT" Relationship="Self.ACC_TRANSACTION_ACCOUNT_FK" FromRole="ACC_TRANSACTION" ToRole="ACCOUNT" />
+          <NavigationProperty Name="BRANCH" Relationship="Self.ACC_TRANSACTION_BRANCH_FK" FromRole="ACC_TRANSACTION" ToRole="BRANCH" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.ACC_TRANSACTION_EMPLOYEE_FK" FromRole="ACC_TRANSACTION" ToRole="EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="ACCOUNT">
+          <Key>
+            <PropertyRef Name="ACCOUNT_ID" />
+          </Key>
+          <Property Name="ACCOUNT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AVAIL_BALANCE" Type="Double" />
+          <Property Name="CLOSE_DATE" Type="DateTime" Precision="3" />
+          <Property Name="LAST_ACTIVITY_DATE" Type="DateTime" Precision="3" />
+          <Property Name="OPEN_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PENDING_BALANCE" Type="Double" />
+          <Property Name="STATUS" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="CUST_ID" Type="Int32" />
+          <Property Name="OPEN_BRANCH_ID" Type="Int32" Nullable="false" />
+          <Property Name="OPEN_EMP_ID" Type="Int32" Nullable="false" />
+          <Property Name="PRODUCT_CD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="ACC_TRANSACTION" Relationship="Self.ACC_TRANSACTION_ACCOUNT_FK" FromRole="ACCOUNT" ToRole="ACC_TRANSACTION" />
+          <NavigationProperty Name="BRANCH" Relationship="Self.ACCOUNT_BRANCH_FK" FromRole="ACCOUNT" ToRole="BRANCH" />
+          <NavigationProperty Name="CUSTOMER" Relationship="Self.ACCOUNT_CUSTOMER_FK" FromRole="ACCOUNT" ToRole="CUSTOMER" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.ACCOUNT_EMPLOYEE_FK" FromRole="ACCOUNT" ToRole="EMPLOYEE" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.ACCOUNT_PRODUCT_FK" FromRole="ACCOUNT" ToRole="PRODUCT" />
+        </EntityType>
+        <EntityType Name="BRANCH">
+          <Key>
+            <PropertyRef Name="BRANCH_ID" />
+          </Key>
+          <Property Name="BRANCH_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADDRESS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="STATE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ZIP_CODE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ACC_TRANSACTION" Relationship="Self.ACC_TRANSACTION_BRANCH_FK" FromRole="BRANCH" ToRole="ACC_TRANSACTION" />
+          <NavigationProperty Name="ACCOUNT" Relationship="Self.ACCOUNT_BRANCH_FK" FromRole="BRANCH" ToRole="ACCOUNT" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.EMPLOYEE_BRANCH_FK" FromRole="BRANCH" ToRole="EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="BUSINESS">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="INCORP_DATE" Type="DateTime" Precision="3" />
+          <Property Name="NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="STATE_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CUST_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CUSTOMER" Relationship="Self.BUSINESS_EMPLOYEE_FK" FromRole="BUSINESS" ToRole="CUSTOMER" />
+        </EntityType>
+        <EntityType Name="CUSTOMER">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="CUST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ADDRESS" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CUST_TYPE_CD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FED_ID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="POSTAL_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="STATE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ACCOUNT" Relationship="Self.ACCOUNT_CUSTOMER_FK" FromRole="CUSTOMER" ToRole="ACCOUNT" />
+          <NavigationProperty Name="BUSINESS" Relationship="Self.BUSINESS_EMPLOYEE_FK" FromRole="CUSTOMER" ToRole="BUSINESS" />
+          <NavigationProperty Name="INDIVIDUAL" Relationship="Self.INDIVIDUAL_CUSTOMER_FK" FromRole="CUSTOMER" ToRole="INDIVIDUAL" />
+          <NavigationProperty Name="OFFICER" Relationship="Self.OFFICER_CUSTOMER_FK" FromRole="CUSTOMER" ToRole="OFFICER" />
+        </EntityType>
+        <EntityType Name="DEPARTMENT">
+          <Key>
+            <PropertyRef Name="DEPT_ID" />
+          </Key>
+          <Property Name="DEPT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="EMPLOYEE" Relationship="Self.EMPLOYEE_DEPARTMENT_FK" FromRole="DEPARTMENT" ToRole="EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="EMPLOYEE">
+          <Key>
+            <PropertyRef Name="EMP_ID" />
+          </Key>
+          <Property Name="EMP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ASSIGNED_BRANCH_ID" Type="Int32" />
+          <Property Name="DEPT_ID" Type="Int32" />
+          <Property Name="SUPERIOR_EMP_ID" Type="Int32" />
+          <NavigationProperty Name="ACC_TRANSACTION" Relationship="Self.ACC_TRANSACTION_EMPLOYEE_FK" FromRole="EMPLOYEE" ToRole="ACC_TRANSACTION" />
+          <NavigationProperty Name="ACCOUNT" Relationship="Self.ACCOUNT_EMPLOYEE_FK" FromRole="EMPLOYEE" ToRole="ACCOUNT" />
+          <NavigationProperty Name="BRANCH" Relationship="Self.EMPLOYEE_BRANCH_FK" FromRole="EMPLOYEE" ToRole="BRANCH" />
+          <NavigationProperty Name="DEPARTMENT" Relationship="Self.EMPLOYEE_DEPARTMENT_FK" FromRole="EMPLOYEE" ToRole="DEPARTMENT" />
+          <NavigationProperty Name="EMPLOYEE1" Relationship="Self.EMPLOYEE_EMPLOYEE_FK" FromRole="EMPLOYEE" ToRole="EMPLOYEE1" />
+          <NavigationProperty Name="EMPLOYEE2" Relationship="Self.EMPLOYEE_EMPLOYEE_FK" FromRole="EMPLOYEE1" ToRole="EMPLOYEE" />
+        </EntityType>
+        <EntityType Name="INDIVIDUAL">
+          <Key>
+            <PropertyRef Name="CUST_ID" />
+          </Key>
+          <Property Name="BIRTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CUST_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CUSTOMER" Relationship="Self.INDIVIDUAL_CUSTOMER_FK" FromRole="INDIVIDUAL" ToRole="CUSTOMER" />
+        </EntityType>
+        <EntityType Name="OFFICER">
+          <Key>
+            <PropertyRef Name="OFFICER_ID" />
+          </Key>
+          <Property Name="OFFICER_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="END_DATE" Type="DateTime" Precision="3" />
+          <Property Name="FIRST_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LAST_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="START_DATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TITLE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CUST_ID" Type="Int32" />
+          <NavigationProperty Name="CUSTOMER" Relationship="Self.OFFICER_CUSTOMER_FK" FromRole="OFFICER" ToRole="CUSTOMER" />
+        </EntityType>
+        <EntityType Name="PRODUCT">
+          <Key>
+            <PropertyRef Name="PRODUCT_CD" />
+          </Key>
+          <Property Name="PRODUCT_CD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DATE_OFFERED" Type="DateTime" Precision="3" />
+          <Property Name="DATE_RETIRED" Type="DateTime" Precision="3" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PRODUCT_TYPE_CD" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ACCOUNT" Relationship="Self.ACCOUNT_PRODUCT_FK" FromRole="PRODUCT" ToRole="ACCOUNT" />
+          <NavigationProperty Name="PRODUCT_TYPE" Relationship="Self.PRODUCT_PRODUCT_TYPE_FK" FromRole="PRODUCT" ToRole="PRODUCT_TYPE" />
+        </EntityType>
+        <EntityType Name="PRODUCT_TYPE">
+          <Key>
+            <PropertyRef Name="PRODUCT_TYPE_CD" />
+          </Key>
+          <Property Name="PRODUCT_TYPE_CD" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PRODUCT" Relationship="Self.PRODUCT_PRODUCT_TYPE_FK" FromRole="PRODUCT_TYPE" ToRole="PRODUCT" />
+        </EntityType>
+        <Association Name="ACC_TRANSACTION_ACCOUNT_FK">
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ACCOUNT">
+              <PropertyRef Name="ACCOUNT_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="ACCOUNT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACC_TRANSACTION_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="EXECUTION_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACC_TRANSACTION_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1" />
+          <End Role="ACC_TRANSACTION" Type="Self.ACC_TRANSACTION" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="ACC_TRANSACTION">
+              <PropertyRef Name="TELLER_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="OPEN_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="0..1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="OPEN_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ACCOUNT_PRODUCT_FK">
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="1" />
+          <End Role="ACCOUNT" Type="Self.ACCOUNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_CD" />
+            </Principal>
+            <Dependent Role="ACCOUNT">
+              <PropertyRef Name="PRODUCT_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_BRANCH_FK">
+          <End Role="BRANCH" Type="Self.BRANCH" Multiplicity="0..1" />
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BRANCH">
+              <PropertyRef Name="BRANCH_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE">
+              <PropertyRef Name="ASSIGNED_BRANCH_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="BUSINESS_EMPLOYEE_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+          <End Role="BUSINESS" Type="Self.BUSINESS" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="BUSINESS">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="INDIVIDUAL_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="1" />
+          <End Role="INDIVIDUAL" Type="Self.INDIVIDUAL" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="INDIVIDUAL">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="OFFICER_CUSTOMER_FK">
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="0..1" />
+          <End Role="OFFICER" Type="Self.OFFICER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CUSTOMER">
+              <PropertyRef Name="CUST_ID" />
+            </Principal>
+            <Dependent Role="OFFICER">
+              <PropertyRef Name="CUST_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_DEPARTMENT_FK">
+          <End Role="DEPARTMENT" Type="Self.DEPARTMENT" Multiplicity="0..1" />
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DEPARTMENT">
+              <PropertyRef Name="DEPT_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE">
+              <PropertyRef Name="DEPT_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLOYEE_EMPLOYEE_FK">
+          <End Role="EMPLOYEE" Type="Self.EMPLOYEE" Multiplicity="0..1" />
+          <End Role="EMPLOYEE1" Type="Self.EMPLOYEE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EMPLOYEE">
+              <PropertyRef Name="EMP_ID" />
+            </Principal>
+            <Dependent Role="EMPLOYEE1">
+              <PropertyRef Name="SUPERIOR_EMP_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PRODUCT_PRODUCT_TYPE_FK">
+          <End Role="PRODUCT_TYPE" Type="Self.PRODUCT_TYPE" Multiplicity="0..1" />
+          <End Role="PRODUCT" Type="Self.PRODUCT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCT_TYPE">
+              <PropertyRef Name="PRODUCT_TYPE_CD" />
+            </Principal>
+            <Dependent Role="PRODUCT">
+              <PropertyRef Name="PRODUCT_TYPE_CD" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatabaseSQLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ACC_TRANSACTION" EntityType="Self.ACC_TRANSACTION" />
+          <EntitySet Name="ACCOUNT" EntityType="Self.ACCOUNT" />
+          <EntitySet Name="BRANCH" EntityType="Self.BRANCH" />
+          <EntitySet Name="BUSINESS" EntityType="Self.BUSINESS" />
+          <EntitySet Name="CUSTOMER" EntityType="Self.CUSTOMER" />
+          <EntitySet Name="DEPARTMENT" EntityType="Self.DEPARTMENT" />
+          <EntitySet Name="EMPLOYEE" EntityType="Self.EMPLOYEE" />
+          <EntitySet Name="INDIVIDUAL" EntityType="Self.INDIVIDUAL" />
+          <EntitySet Name="OFFICER" EntityType="Self.OFFICER" />
+          <EntitySet Name="PRODUCT" EntityType="Self.PRODUCT" />
+          <EntitySet Name="PRODUCT_TYPE" EntityType="Self.PRODUCT_TYPE" />
+          <AssociationSet Name="ACC_TRANSACTION_ACCOUNT_FK" Association="Self.ACC_TRANSACTION_ACCOUNT_FK">
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACC_TRANSACTION_BRANCH_FK" Association="Self.ACC_TRANSACTION_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACC_TRANSACTION_EMPLOYEE_FK" Association="Self.ACC_TRANSACTION_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="ACC_TRANSACTION" EntitySet="ACC_TRANSACTION" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_BRANCH_FK" Association="Self.ACCOUNT_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_CUSTOMER_FK" Association="Self.ACCOUNT_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_EMPLOYEE_FK" Association="Self.ACCOUNT_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="ACCOUNT_PRODUCT_FK" Association="Self.ACCOUNT_PRODUCT_FK">
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+            <End Role="ACCOUNT" EntitySet="ACCOUNT" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_BRANCH_FK" Association="Self.EMPLOYEE_BRANCH_FK">
+            <End Role="BRANCH" EntitySet="BRANCH" />
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="BUSINESS_EMPLOYEE_FK" Association="Self.BUSINESS_EMPLOYEE_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="BUSINESS" EntitySet="BUSINESS" />
+          </AssociationSet>
+          <AssociationSet Name="INDIVIDUAL_CUSTOMER_FK" Association="Self.INDIVIDUAL_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="INDIVIDUAL" EntitySet="INDIVIDUAL" />
+          </AssociationSet>
+          <AssociationSet Name="OFFICER_CUSTOMER_FK" Association="Self.OFFICER_CUSTOMER_FK">
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+            <End Role="OFFICER" EntitySet="OFFICER" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_DEPARTMENT_FK" Association="Self.EMPLOYEE_DEPARTMENT_FK">
+            <End Role="DEPARTMENT" EntitySet="DEPARTMENT" />
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLOYEE_EMPLOYEE_FK" Association="Self.EMPLOYEE_EMPLOYEE_FK">
+            <End Role="EMPLOYEE" EntitySet="EMPLOYEE" />
+            <End Role="EMPLOYEE1" EntitySet="EMPLOYEE" />
+          </AssociationSet>
+          <AssociationSet Name="PRODUCT_PRODUCT_TYPE_FK" Association="Self.PRODUCT_PRODUCT_TYPE_FK">
+            <End Role="PRODUCT_TYPE" EntitySet="PRODUCT_TYPE" />
+            <End Role="PRODUCT" EntitySet="PRODUCT" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseSQLModelContainer" CdmEntityContainer="DatabaseSQLEntities">
+          <EntitySetMapping Name="ACC_TRANSACTION">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.ACC_TRANSACTION">
+              <MappingFragment StoreEntitySet="ACC_TRANSACTION">
+                <ScalarProperty Name="TXN_ID" ColumnName="TXN_ID" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+                <ScalarProperty Name="FUNDS_AVAIL_DATE" ColumnName="FUNDS_AVAIL_DATE" />
+                <ScalarProperty Name="TXN_DATE" ColumnName="TXN_DATE" />
+                <ScalarProperty Name="TXN_TYPE_CD" ColumnName="TXN_TYPE_CD" />
+                <ScalarProperty Name="ACCOUNT_ID" ColumnName="ACCOUNT_ID" />
+                <ScalarProperty Name="EXECUTION_BRANCH_ID" ColumnName="EXECUTION_BRANCH_ID" />
+                <ScalarProperty Name="TELLER_EMP_ID" ColumnName="TELLER_EMP_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ACCOUNT">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.ACCOUNT">
+              <MappingFragment StoreEntitySet="ACCOUNT">
+                <ScalarProperty Name="ACCOUNT_ID" ColumnName="ACCOUNT_ID" />
+                <ScalarProperty Name="AVAIL_BALANCE" ColumnName="AVAIL_BALANCE" />
+                <ScalarProperty Name="CLOSE_DATE" ColumnName="CLOSE_DATE" />
+                <ScalarProperty Name="LAST_ACTIVITY_DATE" ColumnName="LAST_ACTIVITY_DATE" />
+                <ScalarProperty Name="OPEN_DATE" ColumnName="OPEN_DATE" />
+                <ScalarProperty Name="PENDING_BALANCE" ColumnName="PENDING_BALANCE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+                <ScalarProperty Name="OPEN_BRANCH_ID" ColumnName="OPEN_BRANCH_ID" />
+                <ScalarProperty Name="OPEN_EMP_ID" ColumnName="OPEN_EMP_ID" />
+                <ScalarProperty Name="PRODUCT_CD" ColumnName="PRODUCT_CD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BRANCH">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.BRANCH">
+              <MappingFragment StoreEntitySet="BRANCH">
+                <ScalarProperty Name="BRANCH_ID" ColumnName="BRANCH_ID" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="ZIP_CODE" ColumnName="ZIP_CODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BUSINESS">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.BUSINESS">
+              <MappingFragment StoreEntitySet="BUSINESS">
+                <ScalarProperty Name="INCORP_DATE" ColumnName="INCORP_DATE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CUSTOMER">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.CUSTOMER">
+              <MappingFragment StoreEntitySet="CUSTOMER">
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="CUST_TYPE_CD" ColumnName="CUST_TYPE_CD" />
+                <ScalarProperty Name="FED_ID" ColumnName="FED_ID" />
+                <ScalarProperty Name="POSTAL_CODE" ColumnName="POSTAL_CODE" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DEPARTMENT">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.DEPARTMENT">
+              <MappingFragment StoreEntitySet="DEPARTMENT">
+                <ScalarProperty Name="DEPT_ID" ColumnName="DEPT_ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EMPLOYEE">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.EMPLOYEE">
+              <MappingFragment StoreEntitySet="EMPLOYEE">
+                <ScalarProperty Name="EMP_ID" ColumnName="EMP_ID" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="ASSIGNED_BRANCH_ID" ColumnName="ASSIGNED_BRANCH_ID" />
+                <ScalarProperty Name="DEPT_ID" ColumnName="DEPT_ID" />
+                <ScalarProperty Name="SUPERIOR_EMP_ID" ColumnName="SUPERIOR_EMP_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INDIVIDUAL">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.INDIVIDUAL">
+              <MappingFragment StoreEntitySet="INDIVIDUAL">
+                <ScalarProperty Name="BIRTH_DATE" ColumnName="BIRTH_DATE" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OFFICER">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.OFFICER">
+              <MappingFragment StoreEntitySet="OFFICER">
+                <ScalarProperty Name="OFFICER_ID" ColumnName="OFFICER_ID" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+                <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCT">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.PRODUCT">
+              <MappingFragment StoreEntitySet="PRODUCT">
+                <ScalarProperty Name="PRODUCT_CD" ColumnName="PRODUCT_CD" />
+                <ScalarProperty Name="DATE_OFFERED" ColumnName="DATE_OFFERED" />
+                <ScalarProperty Name="DATE_RETIRED" ColumnName="DATE_RETIRED" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PRODUCT_TYPE_CD" ColumnName="PRODUCT_TYPE_CD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCT_TYPE">
+            <EntityTypeMapping TypeName="DatabaseSQLModel.PRODUCT_TYPE">
+              <MappingFragment StoreEntitySet="PRODUCT_TYPE">
+                <ScalarProperty Name="PRODUCT_TYPE_CD" ColumnName="PRODUCT_TYPE_CD" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

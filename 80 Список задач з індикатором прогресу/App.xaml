@@ -1,0 +1,9 @@
+﻿<Application x:Class="_80_Список_задач_з_індикатором_прогресу.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_80_Список_задач_з_індикатором_прогресу"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

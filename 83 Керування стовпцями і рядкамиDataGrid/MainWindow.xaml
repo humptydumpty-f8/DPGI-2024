@@ -1,0 +1,47 @@
+﻿<Window x:Class="_83_Керування_стовпцями_і_рядкамиDataGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_83_Керування_стовпцями_і_рядкамиDataGrid"
+        mc:Ignorable="d"
+        Title="Lection 8-3" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="todoGrid" 
+                  AutoGenerateColumns="False" 
+                  HorizontalGridLinesBrush="DarkGray"
+                  RowBackground="LightGray" 
+                  AlternatingRowBackground="White"
+                  ColumnHeaderHeight="50"
+                  FontSize="12" 
+                  FontWeight="Bold"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center" 
+                  BorderBrush="Black"
+                  >
+
+            <DataGrid.Items>
+                <local:TodoItem Title="Learn WPF" Completion="45" />
+                <local:TodoItem Title="Learn C#" Completion="80"/>
+                <local:TodoItem Title="Wash the car" Completion="0" />
+            </DataGrid.Items>
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Завдання" Binding="{Binding Path=Title}" Width="90" />
+                <DataGridTextColumn Header="Прогрес" Binding="{Binding Path=Completion}" Width="80"/>
+                
+            </DataGrid.Columns>
+
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <StackPanel >
+                        <TextBlock Text="Progress" />
+                        <ProgressBar Minimum="0" Maximum="100" Value="{Binding Completion}" Height="20"/>
+                    </StackPanel>                    
+                    
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
+
+        </DataGrid>
+    </Grid>
+</Window>

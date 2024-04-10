@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c11581f9c57d4b61b740b8c1401b52ba" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseSQLModel.ACC_TRANSACTION" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.ACCOUNT" Width="1.5" PointX="6" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.BRANCH" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.BUSINESS" Width="1.5" PointX="6" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.CUSTOMER" Width="1.5" PointX="3.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.DEPARTMENT" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.EMPLOYEE" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.INDIVIDUAL" Width="1.5" PointX="6" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.OFFICER" Width="1.5" PointX="6" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.PRODUCT" Width="1.5" PointX="3.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseSQLModel.PRODUCT_TYPE" Width="1.5" PointX="1.5" PointY="14.875" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseSQLModel.ACC_TRANSACTION_ACCOUNT_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACC_TRANSACTION_BRANCH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACC_TRANSACTION_EMPLOYEE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACCOUNT_BRANCH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACCOUNT_CUSTOMER_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACCOUNT_EMPLOYEE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.ACCOUNT_PRODUCT_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.EMPLOYEE_BRANCH_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.BUSINESS_EMPLOYEE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.INDIVIDUAL_CUSTOMER_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.OFFICER_CUSTOMER_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.EMPLOYEE_DEPARTMENT_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.EMPLOYEE_EMPLOYEE_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseSQLModel.PRODUCT_PRODUCT_TYPE_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

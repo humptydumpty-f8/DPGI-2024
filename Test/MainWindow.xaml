@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
-        mc:Ignorable="d"
+        mc:Ignorable="d"        
         Title="Test" Height="300" Width="800">
     <Grid x:Name="mainGrid">
+
         
     </Grid>
 </Window>

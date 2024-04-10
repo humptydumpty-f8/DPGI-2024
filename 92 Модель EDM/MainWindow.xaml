@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp39.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp39"
+        mc:Ignorable="d"
+        Title="Lection 9-2" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <TabControl>
+
+            <TabItem Header="Employee">
+                <StackPanel Margin="0,0,0,38">
+                    <DataGrid x:Name="employeeGrid" Margin="10"/>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Department">
+                <DataGrid x:Name="departmentGrid" Margin="10"/>
+            </TabItem>
+
+            <TabItem Header="EmployeesOfDepartment">
+                <StackPanel>
+                    <ComboBox Name="cmbDepartment" 
+                              SelectedIndex="2" 
+                              DisplayMemberPath="NAME"
+                              Margin="10" 
+                              SelectionChanged="cmbDepartment_SelectionChanged"/>
+                    <DataGrid  Margin="10" Name="selectedEmployeesGrid"/>
+                </StackPanel>
+
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp38.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp38"
+        mc:Ignorable="d"
+        Title="Lection 9-1" Height="450" Width="800">
+    <Grid>
+        <!--Привязка джерела даних ItemsSource-->
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" ItemsSource="{Binding}"/>
+
+    </Grid>
+</Window>

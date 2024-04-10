@@ -1,0 +1,45 @@
+﻿<Window x:Class="_10_ToolBar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10_ToolBar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel x:Name="mainGrid">
+            <ToolBar DockPanel.Dock="Top">
+                <Button>Button</Button>
+                <CheckBox FontWeight="Bold">Bold</CheckBox>
+                <CheckBox FontStyle="Italic">Italic</CheckBox>
+                <Separator/>
+                <RadioButton >Yes</RadioButton>
+                <RadioButton >No</RadioButton>
+                <Separator/>
+                <ComboBox SelectedIndex="0">
+                    <ComboBoxItem>100%</ComboBoxItem>
+                    <ComboBoxItem>50%</ComboBoxItem>
+                    <ComboBoxItem>25%</ComboBoxItem>
+                </ComboBox>
+                <Separator></Separator>
+            </ToolBar>
+
+            <StackPanel>
+                <Button>Button</Button>
+                <CheckBox FontWeight="Bold">Bold</CheckBox>
+                <CheckBox FontStyle="Italic">Italic</CheckBox>
+                <Separator/>
+                <RadioButton >Yes</RadioButton>
+                <RadioButton >No</RadioButton>
+                <Separator/>
+                <ComboBox SelectedIndex="0">
+                    <ComboBoxItem>100%</ComboBoxItem>
+                    <ComboBoxItem>50%</ComboBoxItem>
+                    <ComboBoxItem>25%</ComboBoxItem>
+                </ComboBox>
+
+            </StackPanel>
+            
+        </DockPanel>
+    </Grid>
+</Window>

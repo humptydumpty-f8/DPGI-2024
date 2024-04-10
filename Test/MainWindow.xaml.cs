@@ -20,17 +20,12 @@ namespace Test
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
 
-            StackPanel CustomCommandStackPanel = new StackPanel();
-            Button CustomCommandButton = new Button();
-            CustomCommandStackPanel.Children.Add(CustomCommandButton);
-
-            mainGrid.Children.Add(CustomCommandStackPanel);
-            this.Content = CustomCommandStackPanel;
-
         }
     }
+    
 }

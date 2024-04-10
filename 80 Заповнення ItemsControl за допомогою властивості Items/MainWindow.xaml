@@ -1,0 +1,21 @@
+﻿<Window x:Class="_80_Заповнення_ItemsControl_за_допомогою_властивості_Items.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_80_Заповнення_ItemsControl_за_допомогою_властивості_Items"
+        mc:Ignorable="d"
+        Title="Lection 8-0" Height="450" Width="800">
+    <Grid>
+        <ListBox xmlns:sys="clr-namespace:System;assembly=mscorlib"
+         Name="listBox">
+
+            <!-- The <ListBox.Items> element is implicitly used.-->
+            This is a string in a ListBox
+
+            <sys:DateTime>2024/3/4 13:6:55</sys:DateTime>          
+
+            <TextBlock>String in a TextBlock</TextBlock>
+        </ListBox>
+    </Grid>
+</Window>

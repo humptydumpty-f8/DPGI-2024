@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp29.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp29"
+        mc:Ignorable="d"
+        Title="Lection 8-1" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--Створенння елементту з привязкою в коді-->
+        <ListBox x:Name="lstBox" HorizontalAlignment="Center" Grid.Column="1" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="138,15,154,0" HorizontalAlignment="Center" Grid.Column="1">
+            <Label>name</Label>
+            <TextBox Name="txtName" Width="190" />
+            <Label>age</Label>
+            <TextBox Name="txtAge" Width="190" />
+            <Button x:Name="addButton" Content="Add" MaxWidth="70" Margin="10 0 10 0" Click="addButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
