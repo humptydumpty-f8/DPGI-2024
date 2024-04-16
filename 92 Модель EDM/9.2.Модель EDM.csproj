@@ -84,23 +84,23 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="ACCOUNT.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="ACC_TRANSACTION.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BRANCH.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="BUSINESS.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="CUSTOMER.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="DatabaseSQL.Context.cs">
       <AutoGen>True</AutoGen>
@@ -118,13 +118,13 @@
       <DependentUpon>DatabaseSQL.edmx</DependentUpon>
     </Compile>
     <Compile Include="DEPARTMENT.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="EMPLOYEE.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="INDIVIDUAL.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -132,29 +132,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
     <Compile Include="OFFICER.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="PRODUCT.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="PRODUCT_TYPE.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DatabaseSQL.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -180,13 +165,6 @@
     <None Include="DatabaseSQL.edmx.diagram">
       <DependentUpon>DatabaseSQL.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -211,8 +189,8 @@
   <ItemGroup>
     <Content Include="DatabaseSQL.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DatabaseSQL.Context.cs</LastGenOutput>
       <DependentUpon>DatabaseSQL.edmx</DependentUpon>
+      <LastGenOutput>DatabaseSQL.Context.cs</LastGenOutput>
     </Content>
     <Content Include="DatabaseSQL.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -225,16 +203,6 @@
     <Content Include="DatabaseSQL_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseSQL.mdf</DependentUpon>
-    </Content>
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -21,7 +21,7 @@ namespace WpfApp39
     /// </summary>
     public partial class MainWindow : Window
     {
-        DatabaseSQLEntities context;
+        DatabaseSQLEntities1 context;
 
         List<EMPLOYEE> empList;
         List<DEPARTMENT> depList;
@@ -31,7 +31,7 @@ namespace WpfApp39
         {
             InitializeComponent();
 
-            context = new DatabaseSQLEntities();
+            context = new DatabaseSQLEntities1();
 
             empList = new List<EMPLOYEE>();
             depList = new List<DEPARTMENT>();

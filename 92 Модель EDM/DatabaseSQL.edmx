@@ -683,7 +683,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DatabaseSQLEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DatabaseSQLEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ACC_TRANSACTION" EntityType="Self.ACC_TRANSACTION" />
           <EntitySet Name="ACCOUNT" EntityType="Self.ACCOUNT" />
           <EntitySet Name="BRANCH" EntityType="Self.BRANCH" />
@@ -757,7 +757,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseSQLModelContainer" CdmEntityContainer="DatabaseSQLEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DatabaseSQLModelContainer" CdmEntityContainer="DatabaseSQLEntities1">
           <EntitySetMapping Name="ACC_TRANSACTION">
             <EntityTypeMapping TypeName="DatabaseSQLModel.ACC_TRANSACTION">
               <MappingFragment StoreEntitySet="ACC_TRANSACTION">

@@ -13,10 +13,10 @@ namespace WpfApp39
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DatabaseSQLEntities : DbContext
+    public partial class DatabaseSQLEntities1 : DbContext
     {
-        public DatabaseSQLEntities()
-            : base("name=DatabaseSQLEntities")
+        public DatabaseSQLEntities1()
+            : base("name=DatabaseSQLEntities1")
         {
         }
     

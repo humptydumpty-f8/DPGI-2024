@@ -231,6 +231,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.10.Рзміщення To
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.11.Теж що в 10.1 з StatusBar", "10 StatusBar\10.11.Теж що в 10.1 з StatusBar.csproj", "{B2605668-8CA2-4C9D-B43D-B9870AB861CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.1.Обробка події Startup", "11 Startup\11.1.Обробка події Startup.csproj", "{656B74E2-ED1F-412E-8568-A0FB8488CADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.2.Події Startup, Deactivated, Exit", "11 Exit\11.2.Події Startup, Deactivated, Exit.csproj", "{64C43412-737E-4EFB-BB58-751BB4266CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.3.Стандартний SplashScreen", "11 SplashScreen\11.3.Стандартний SplashScreen.csproj", "{70E0A724-6FB8-4EE2-A49E-D6D9853404CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.4.SpashScreen у вигляді вікна", "11 Spash+Timer\11.4.SpashScreen у вигляді вікна.csproj", "{5026B9F9-7DFA-47D6-910D-06B27EB54EC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.5.Параметри командного рядка", "11 CommandLine\11.5.Параметри командного рядка.csproj", "{4BB3E38B-CE23-42D2-A8A4-881214EE2570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.6.Керування WindowState з командного рядка", "11 ComLine_to_Win\11.6.Керування WindowState з командного рядка.csproj", "{8FCEA748-6705-4B4F-973E-0AD2F8487E49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -693,6 +705,30 @@ Global
 		{B2605668-8CA2-4C9D-B43D-B9870AB861CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2605668-8CA2-4C9D-B43D-B9870AB861CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2605668-8CA2-4C9D-B43D-B9870AB861CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656B74E2-ED1F-412E-8568-A0FB8488CADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656B74E2-ED1F-412E-8568-A0FB8488CADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656B74E2-ED1F-412E-8568-A0FB8488CADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656B74E2-ED1F-412E-8568-A0FB8488CADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C43412-737E-4EFB-BB58-751BB4266CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C43412-737E-4EFB-BB58-751BB4266CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C43412-737E-4EFB-BB58-751BB4266CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C43412-737E-4EFB-BB58-751BB4266CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E0A724-6FB8-4EE2-A49E-D6D9853404CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E0A724-6FB8-4EE2-A49E-D6D9853404CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E0A724-6FB8-4EE2-A49E-D6D9853404CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E0A724-6FB8-4EE2-A49E-D6D9853404CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5026B9F9-7DFA-47D6-910D-06B27EB54EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5026B9F9-7DFA-47D6-910D-06B27EB54EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5026B9F9-7DFA-47D6-910D-06B27EB54EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5026B9F9-7DFA-47D6-910D-06B27EB54EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BB3E38B-CE23-42D2-A8A4-881214EE2570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BB3E38B-CE23-42D2-A8A4-881214EE2570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BB3E38B-CE23-42D2-A8A4-881214EE2570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BB3E38B-CE23-42D2-A8A4-881214EE2570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCEA748-6705-4B4F-973E-0AD2F8487E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCEA748-6705-4B4F-973E-0AD2F8487E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCEA748-6705-4B4F-973E-0AD2F8487E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCEA748-6705-4B4F-973E-0AD2F8487E49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

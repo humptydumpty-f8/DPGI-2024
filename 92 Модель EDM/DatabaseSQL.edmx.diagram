@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c11581f9c57d4b61b740b8c1401b52ba" Name="Diagram1">
+      <Diagram DiagramId="b996822e0a6f47f4985ce52afd6d7e7e" Name="Diagram1">
         <EntityTypeShape EntityType="DatabaseSQLModel.ACC_TRANSACTION" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseSQLModel.ACCOUNT" Width="1.5" PointX="6" PointY="5.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseSQLModel.BRANCH" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
