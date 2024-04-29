@@ -1,0 +1,38 @@
+﻿<Page x:Class="_12_5_Page.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_12_5_Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+
+                <TextBlock Margin="3"> Навчальні приклади</TextBlock>
+
+                <Button x:Name="btnCheckBox" 
+                    Margin="3" 
+                    Padding="3" Click="btnCheckBox_Click">
+                    CheckBox
+                </Button>
+
+
+                <Button x:Name="btnRadio" 
+                    Margin="3" 
+                    Padding="3" Click="btnRadio_Click">
+                    RadioButton
+                </Button>
+            </StackPanel>
+            <Frame x:Name="frmMain" Grid.Column="1"  BorderBrush="Blue" BorderThickness="1"></Frame>
+
+        </Grid>
+    </Grid>
+</Page>

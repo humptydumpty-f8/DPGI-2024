@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        xmlns:res="clr-namespace:WpfApp11.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="{x:Static res:Resources.TextLabel}"/>
+            <TextBlock Height="82" Text="{x:Static res:Resources.TextString}"/>
+            <Button Content="{x:Static res:Resources.EnterButton}" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

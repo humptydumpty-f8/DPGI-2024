@@ -8,19 +8,21 @@
         Title="Lection 10-3" Height="450" Width="800">
 
     <Window.CommandBindings>
-        <CommandBinding Command="New" CanExecute="NewCommand_CanExecute" Executed="NewCommand_Executed" />
-        
+        <CommandBinding Command="New" CanExecute="NewCommand_CanExecute" Executed="NewCommand_Executed" />        
     </Window.CommandBindings>
+    
     <Grid>
         <DockPanel>
             <StackPanel DockPanel.Dock="Left" >
 
-                <MenuItem Command="New" />                    
-                    <MenuItem Header="_Exit" Click="MenuItem_Click"/>
-
-                <MenuItem Command="Cut" CommandTarget="{Binding ElementName=txtEditor}"/>
-                <MenuItem Command="Copy" CommandTarget="{Binding ElementName=txtEditor}"/>
-                <MenuItem Command="Paste" CommandTarget="{Binding ElementName=txtEditor}"/>
+                <MenuItem Command="New"/>
+                <MenuItem Header="_Exit" Click="MenuItem_Click"/>
+                <Separator/>
+                
+                    <MenuItem Command="Cut" CommandTarget="{Binding ElementName=txtEditor}"/>
+                    <MenuItem Command="Copy" CommandTarget="{Binding ElementName=txtEditor}"/>
+                    <MenuItem Command="Paste" CommandTarget="{Binding ElementName=txtEditor}"/>
+                              
                 
             </StackPanel>
 

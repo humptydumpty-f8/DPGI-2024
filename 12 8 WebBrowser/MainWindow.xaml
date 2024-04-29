@@ -1,0 +1,36 @@
+﻿<Window x:Class="_12_8_WebBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12_8_WebBrowser"
+        mc:Ignorable="d"
+        Title="WebBrowser Control in WPF" Height="Auto" Width="Auto" Loaded="Window_Loaded">
+    <Grid x:Name="LayoutRoot" Width="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="10"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Stretch" Margin="0,15,0,0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch">
+            <WebBrowser x:Name="myBrowser" Margin="0,0,0,0" Cursor="Arrow" Height="Auto" />
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Margin="0,15,0,0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid HorizontalAlignment="Stretch" Margin="0,15,0,0" Grid.Row="0" VerticalAlignment="Stretch">
+                <Border Height="20" BorderThickness="2" CornerRadius="5,5,0,0" VerticalAlignment="Top" />
+                <Button Click="GoBack_Click" Width="50" Height="20" x:Name="GoBack">Go Back</Button>
+            </Grid>
+            <Grid HorizontalAlignment="Stretch" Margin="0,15,0,0" Grid.Row="1" VerticalAlignment="Stretch">
+                <Button Click="GoForward_Click" Width="61" Height="20" x:Name="GoForward">Go Forward</Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

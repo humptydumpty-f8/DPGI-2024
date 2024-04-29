@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_11_Spash_Timer"
         mc:Ignorable="d"
-        Title="SplashScreenWindow" Height="450" Width="450">
+        Title="SplashScreenWindow" Height="450" Width="450" WindowStartupLocation="CenterScreen">
     <Grid >
         <ProgressBar IsIndeterminate="True" />
         <TextBlock HorizontalAlignment="Center"

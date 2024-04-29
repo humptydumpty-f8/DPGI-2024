@@ -20,12 +20,24 @@
                     <MenuItem Header="_Exit" />
                 </MenuItem>
                 <MenuItem Header="_Edit">
-                    <MenuItem Command="ApplicationCommands.Copy"/>
-                    <MenuItem Command="ApplicationCommands.Cut"/>
-                    <MenuItem Command="ApplicationCommands.Paste"/>
+                    <MenuItem Command="ApplicationCommands.Copy">
+                        <MenuItem.Icon>
+                            <Image Source="Images/copy.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="ApplicationCommands.Cut">
+                        <MenuItem.Icon>
+                            <Image Source="Images/cut.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="ApplicationCommands.Paste">
+                        <MenuItem.Icon>
+                            <Image Source="Images/past.ico"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-                <MenuItem Header="_Font">
-                    <MenuItem Header="_Bold" IsCheckable="True" 
+                <MenuItem Header="Fo_nt">
+                    <MenuItem Header="_Bold" IsCheckable="True"
                               Checked="Bold_Checked"
                               Unchecked="Bold_Unchecked"/>
                     <MenuItem Header="_Italic" IsCheckable="True"

@@ -102,10 +102,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SplashScreen\myCte.jfif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="myCte.jfif" />
+    <EmbeddedResource Include="myCte.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

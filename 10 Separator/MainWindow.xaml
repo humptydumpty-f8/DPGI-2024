@@ -12,7 +12,11 @@
                     <Separator>
                         <Separator.Template>
                             <ControlTemplate>
-                                <Border CornerRadius="2" Padding="5" Background="PaleGoldenrod" BorderBrush="Black" BorderThickness="1">
+                                <Border CornerRadius="2" 
+                                        Padding="5" 
+                                        Background="PaleGoldenrod" 
+                                        BorderBrush="Black" 
+                                        BorderThickness="1">
                                     <TextBlock FontWeight="Bold">Traffic light colors</TextBlock>
                                 </Border>
                             </ControlTemplate>
