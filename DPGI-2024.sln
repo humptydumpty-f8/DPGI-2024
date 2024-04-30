@@ -259,7 +259,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.4.Сторінки в Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.5.Ті ж сторінки в Page", "12 5 Page\12.5.Ті ж сторінки в Page.csproj", "{4646A667-8E73-4351-8EBB-947DD60FA905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.6.Сторынка з двома Frame", "12 6 2Frame\12.6.Сторынка з двома Frame.csproj", "{EE130137-7F2E-43B1-A445-6EFBE22F3FCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.6.Сторінка з двома Frame", "12 6 2Frame\12.6.Сторінка з двома Frame.csproj", "{EE130137-7F2E-43B1-A445-6EFBE22F3FCF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.7.Застосунок XBAP", "12 7 WpfBrowserApp\12.7.Застосунок XBAP.csproj", "{43758DD0-A46D-43AA-A472-0AD513BC8DB7}"
 EndProject

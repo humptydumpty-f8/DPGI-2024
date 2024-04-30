@@ -28,7 +28,10 @@
                 RadioButton
             </Button>
         </StackPanel>
-        <Frame x:Name="frmMain" Grid.Column="1"  BorderBrush="Blue" BorderThickness="1"></Frame>
-
+        <Frame x:Name="frmMain" 
+               Grid.Column="1"  
+               Margin="10"
+               BorderBrush="Blue" 
+               BorderThickness="1"/>
     </Grid>
 </Window>
