@@ -26,11 +26,9 @@ namespace _12_APEPS
 
         private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
-            if (e.Exception is System.Net.WebException)
-            {
                 // Запобігання обробці необроблених виключень за умовчанням
                 e.Handled = true;
-            }
+            
         }
     }
 }
